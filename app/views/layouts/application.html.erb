@@ -7,19 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if user_signed_in? %>
-	<%= link_to 'Salir', destroy_user_session_path, method: :delete %>
-<% else %>
-	<%= link_to 'Ingresar', user_session_path %>
-	<%= link_to 'Registrarse', new_user_registration_path %>
-<% end %>
+	<div id="nav">
+		<div id="page_nav">
+			<%= link_to 'Home', root_path %>
+			<%= link_to 'Productos', products_path %>
+			<%= link_to 'Nosotros', page_about_path %>
+			<%= link_to 'Contacto', page_contact_path %>
+		</div>
+	<div id="sing_in">
+	<% if user_signed_in? %>
+		<%= link_to 'Salir', destroy_user_session_path, method: :delete %>
+	<% else %>
+		<%= link_to 'Ingresar', user_session_path %>
+		<%= link_to 'Registrarse', new_user_registration_path %>
+	<% end %>
+	</div>
 
-		<%= link_to 'Home', root_path %>
-		
-			
+
+		<div id="main_wrap">
 			<p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-<%= yield %>
-
+		
+		<%= yield %>
+		</div>
+		</div>
 </body>
 </html>
+
