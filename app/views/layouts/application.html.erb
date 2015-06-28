@@ -16,6 +16,8 @@
 		</div>
 	<div id="sing_in">
 	<% if user_signed_in? %>
+
+		Hola: <%= current_user.name %>
 		<%= link_to 'Salir', destroy_user_session_path, method: :delete %>
 	<% else %>
 		<%= link_to 'Ingresar', user_session_path %>
