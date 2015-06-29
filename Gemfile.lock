@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/activeadmin/activeadmin.git
+  remote: git://github.com/gregbell/active_admin.git
   revision: 655e2be7a351411d3b52b5fa26555a74829d736e
   specs:
     activeadmin (1.0.0.pre1)
@@ -38,6 +38,7 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
+    active_skin (0.0.9)
     activejob (4.2.2)
       activesupport (= 4.2.2)
       globalid (>= 0.3.0)
@@ -206,6 +207,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_skin
   activeadmin!
   better_errors
   byebug

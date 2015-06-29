@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', github: 'gregbell/active_admin'
+
+gem 'active_skin'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
